@@ -1,43 +1,138 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #141414;
-    color: white;
+body{
+background:#0b1220;
+color:white;
 }
 
-header {
-    background-color: #e50914;
-    padding: 15px;
-    text-align: center;
+/* HEADER */
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 40px;
+background:#111827;
+position:sticky;
+top:0;
+z-index:100;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.logo{
+font-size:26px;
+font-weight:bold;
 }
 
-.video-card {
-    width: 320px;
-    background-color: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
+.logo span{
+background:linear-gradient(90deg,#00e5ff,#00ff99,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-.video-card video {
-    width: 100%;
-    border-radius: 8px;
+.search{
+padding:8px 15px;
+width:220px;
+border-radius:20px;
+border:none;
+outline:none;
 }
 
-.video-card h3 {
-    margin-top: 10px;
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#111827,#0b1220);
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+color:#bbb;
+margin:10px 0;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#00e5ff;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* GRID 3x2 */
+.grid{
+width:95%;
+margin:40px auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+/* CARD */
+.card{
+background:#1f2937;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* VIDEO */
+video{
+width:100%;
+height:200px;
+object-fit:cover;
+background:black;
+}
+
+/* INFO */
+.info{
+padding:10px;
+}
+
+.info h3{
+color:#00e5ff;
+}
+
+.info p{
+font-size:13px;
+color:#aaa;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+margin-top:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+.grid{grid-template-columns:1fr;}
 }

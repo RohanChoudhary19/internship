@@ -32,11 +32,11 @@
 
 // student2.isPresent();
 // student1.isPresent();
-class student {
-    static greet(){
-        static greet(){
-            
-        }
+class dog extends animal {
+    constructor(name,age){
+        super(name);
+        this.age = age;}
+        
     }
 }
 
