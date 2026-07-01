@@ -32,13 +32,30 @@
 
 // student2.isPresent();
 // student1.isPresent();
-class dog extends animal {
-    constructor(name,age){
-        super(name);
-        this.age = age;}
-        
+
+
+
+class ShoppingCart {
+    constructor() {
+        // initialize empty items array
+        this.items = [];
+    }
+
+    // add item method
+    addItem(item) {
+        this.items.push(item);
+        console.log(`${item} added to cart`);
     }
 }
 
+// create object
+const cart = new ShoppingCart();
 
+// add items
+cart.addItem("Apple");
+cart.addItem("Shoes");
+cart.addItem("Laptop");
+
+// show final cart
+console.log("Final Cart Items:", cart.items);
         
