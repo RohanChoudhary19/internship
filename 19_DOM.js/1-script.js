@@ -12,12 +12,14 @@
 // const movie = document.querySelector("li");
 // console.log(movie);
 
-const ul = document,queryselector(".movieList");
-console.log(ul);
+// const ul = document,queryselector(".movieList");
+// console.log(ul);
 
-const li = document.createElement("li");
+// const li = document.createElement("li");
  
-li.innerTExt="dabangg";
-li.classList.add("movie");
+// li.innerTExt="dabangg";
+// li.classList.add("movie");
 
-ul.appendChild(li);
+// ul.appendChild(li);
+
+
