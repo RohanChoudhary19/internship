@@ -1,4 +1,4 @@
-const form = document.querySelecor("#btn");
+const form = document.querySelector("#btn");
 
 btn.onclick=() => {
     alert("mujhain dabaya gya");
