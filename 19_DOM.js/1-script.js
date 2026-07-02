@@ -1,13 +1,23 @@
-console.log("javascript Execution Starts");
+// console.log("javascript Execution Starts");
 
-const h = document.getElementById("heading");
-console.log(h);
+// const h = document.getElementById("heading");
+// console.log(h);
 
-const movies = document.getElementsByClassName("movie");
-console.log(movies);
+// const movies = document.getElementsByClassName("movie");
+// console.log(movies);
 
-const header = document.querySelector("h1");
-console.log(header);
+// const header = document.querySelector("h1");
+// console.log(header);
 
-const movie = document.querySelector("li");
-console.log(movie);
+// const movie = document.querySelector("li");
+// console.log(movie);
+
+const ul = document,queryselector(".movieList");
+console.log(ul);
+
+const li = document.createElement("li");
+ 
+li.innerTExt="dabangg";
+li.classList.add("movie");
+
+ul.appendChild(li);
